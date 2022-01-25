@@ -3,7 +3,7 @@ pipeline {
     environment { 
         PROJECT_NAME 			        = 'WebApplication1'
         PROJECT_S3_BUCKET_REGION 		= 'ap-south-1'
-        PROJECT_S3_BUCKET_NAME 			= 'sample-net-webapp'
+        PROJECT_S3_BUCKET_NAME 			= 'dot-net-bckt'
         PROJECT_BUILD_OUTPUT_FILE_NAME    	= 'WebApplication1.zip'              
         PROJECT_SOLUTION_NAME 			= 'WebApplication1.sln'
     }
