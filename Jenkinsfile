@@ -30,7 +30,7 @@ pipeline {
 
         stage('Building the project') {
             steps {
-                        bat 'C:Users\NuGet\NuGet.exe restore ${PROJECT_SOLUTION_NAME}'
+                        bat 'C:Users/NuGet/NuGet.exe restore ${PROJECT_SOLUTION_NAME}'
 		        bat "\"${tool 'MS_Build'}\\msbuild.exe\" ${PROJECT_SOLUTION_NAME} /p:DeployOnBuild=true /p:PublishProfile=FolderProfile /p:Configuration=Release /p:Platform=\"Any CPU\" /p:ProductVersion=1.0.0.${env.BUILD_NUMBER}"
             }
         }
