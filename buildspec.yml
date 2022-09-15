@@ -3,7 +3,7 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore WebApplication/WebApplication1/WebApplication1.csproj
+      - dotnet restore WebApplication1.csproj
   build:
     commands:
       - echo Build started on `date`
